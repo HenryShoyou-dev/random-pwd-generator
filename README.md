@@ -21,7 +21,6 @@ A simple command-line password generator built with Python.
 
 ```bash
 git clone https://github.com/HenryShoyou-dev/password-generator.git
-cd password-generator
 ```
 
 2. Navigate to the project directory
