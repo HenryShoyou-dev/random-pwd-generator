@@ -21,12 +21,12 @@ def generate_password(min_length, numbers = True, special_characters = True):
 
     while not meets_criteria or len(pwd) < min_length: # If the generated password doesn't meet the criteria or the length of the password isn't long enough, the while loop will run
         new_char = random.choice(characters) # Pick random char from characters variable
-        pwd += new_char # Insert char from new_char to pwd variable
+        pwd += new_char # Insert a character from the new_char to the pwd variable
 
         if new_char in digits: 
-            has_number = True # Check whether the character from new_char is a digit or not
+            has_number = True # Check whether the character in new_char is a digit
         elif new_char in special:
-            has_special = True # Check whether the character from new_char is a special character or not
+            has_special = True # Check whether the character in new_char is a special character
 
         meets_criteria = True
 
@@ -39,8 +39,8 @@ def generate_password(min_length, numbers = True, special_characters = True):
     return pwd # If the password has met the criteria, return the value of pwd
 
 min_length = int(input("Enter the minimum length of your password: "))
-has_numbers = input("Do you want to have numbers innit? (y/n): ") == "y"
-has_special = input("Do you want to have special characters? (y/n): ") == "y"
+has_numbers = input("Do you want to have numbers in your password? (y/n): ") == "y"
+has_special = input("Do you want to have special characters in your password? (y/n): ") == "y"
 
 pwd = generate_password(min_length, has_numbers, has_special)
 
