@@ -14,7 +14,7 @@ def generate_password(min_length, numbers = True, special_characters = True):
 
     pwd = "" # Password variable for storing last password
 
-    meets_criteria = False # A variable to check whether the password meets the criteria or not
+    meets_criteria = False # A variable to check whether the password meets the criteria
 
     has_number = False
     has_special = False 
